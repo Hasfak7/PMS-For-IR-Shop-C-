@@ -1,0 +1,60 @@
+CREATE TABLE dbo.Table_2
+	(
+	stuid int NOT NULL,
+	sname varchar(250) NULL,
+	enroll varchar(250) NULL,
+	dep varchar(250) NULL,
+	sem varchar(250) NULL,
+	contact bigint NULL,
+	email varchar(250) NULL
+	)  ON [PRIMARY]
+
+
+//
+
+CREATE TABLE dbo.NewStudent
+	(
+	stuid int NOT NULL IDENTITY(1,1) primary key,
+	sname varchar(250) NOT NULL,
+	enroll varchar(250) NOT NULL,
+	dep varchar(250) NOT NULL,
+	sem varchar(250) NOT NULL,
+	contact bigint NOT NULL,
+	email varchar(250) NOT NULL
+	)   
+
+
+//////////
+
+CREATE TABLE dbo.IRBook
+	(
+	id int NOT NULL IDENTITY(1,1) primary key,
+	std_enroll varchar(250) NOT NULL,
+	std_name varchar(250) NOT NULL,
+	std_dep varchar(250) NOT NULL,
+	std_sem varchar(250) NOT NULL,
+	std_contact bigint NOT NULL,
+	std_email varchar(250) NOT NULL,
+	book_issue_date varchar(250) NOT NULL,
+	book_return_date varchar(250) 
+	)  
+
+
+
+
+CREATE TABLE dbo.IRBook
+	(
+	id int NOT NULL IDENTITY(1,1) primary key,
+	std_enroll varchar(250) NOT NULL,
+	std_name varchar(250) NOT NULL,
+	std_dep varchar(250) NOT NULL,
+	std_sem varchar(250) NOT NULL,
+	std_contact bigint NOT NULL,
+	std_email varchar(250) NOT NULL,
+	book_name varchar(250) NOT NULL,
+	book_issue_date varchar(250) NOT NULL,
+	book_return_date varchar(250) 
+	)   
+
+
+
